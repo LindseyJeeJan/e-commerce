@@ -40,7 +40,7 @@ router.post('/', async (req, res) => {
     const tagData = await Tag.create({
       product_id: req.body.product_id,
     });
-    res.status(200).json(locationData);
+    res.status(200).json(tagData);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -73,7 +73,7 @@ router.delete('/:id', async (req, res) => {
       },
     });
 
-    if (!categoryInfo) {
+    if (!tagInfo) {
       res.status(404).json({ message: 'Tag ID does not exist.' });
       return;
     }
