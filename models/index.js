@@ -17,12 +17,20 @@ Category.hasMany(Product, {
 
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, { 
-    through: ProductTag 
+  through: {
+    model: ProductTag,
+  }, 
+   // Define an alias for when data is retrieved
+  as: 'product_tags'
 });
 
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, { 
-    through: ProductTag 
+  through: {
+    model: ProductTag,
+  }, 
+   // Define an alias for when data is retrieved
+  as: 'tags_products'
 });
 
 module.exports = {Product, Category, Tag, ProductTag};
