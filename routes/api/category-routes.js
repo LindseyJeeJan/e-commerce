@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
-
 router.get('/', async (req, res) => {
   // find all categories
   // be sure to include its associated Products
@@ -38,7 +37,7 @@ router.post('/', async (req, res) => {
   // create a new category
    try {
     const categoryData = await Category.create({
-      product_id: req.body.product_id,
+      category_name: req.body.category_name
     });
     res.status(200).json(categoryData);
   } catch (err) {
