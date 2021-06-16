@@ -19,7 +19,7 @@
   ## Usage
   After creating your database, seed it with the data in the application by running 'npm run seed'. Then start the application with the command 'npm start'.
 
-  :movie_camera: [Walkthrough video](https://drive.google.com/file/d/1DVhy0uBv1KMpC9L0SGj92L6Dccq5aHDf/view)
+  :movie_camera: [Walkthrough video](https://drive.google.com/file/d/1-eUhK_c6mTtRHzDhjjtVnR7PJHFw-bu3/view)
 
   :camera: ![Readme code](assets/images/screenshot.png)
 
